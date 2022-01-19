@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>January 30th Through The Years</title>
+  </head>
+  <body>
+  <div class="grid-container">
+    <div class="item1"><h1>January 30th Through The Years</h1></div>
+    <div class="item2">
+      <h2>Menu</h2>
+      <ul>
+      <li><a href="#" onclick="Video1()">1998</a></li>
+      <li><a href="#" onclick="Video2()">2000</a></li>
+      <li><a href="#" onclick="Video3()">2005</a></li>
+      <li><a href="#" onclick="Video4()">2010</a></li>
+      <li><a href="#" onclick="Video5()">2015</a></li>
+      <li><a href="#" onclick="Video6()">2020</a></li>
+      <li><a href="#" onclick="Video7()">2021</a></li>
+      <li><a href="#" onclick="Video8()">2022</a></li>
+    </div>
+    <div class="item3"><iframe id='video' width="75%" height="100%" src="https://www.youtube.com/embed/69fx7n-D_nU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="item5"><p id='name'>Janet Jackson - Together Again</p></div>
+  </div>
+  <script>
+  let video = document.getElementById('video');
+  let name = document.getElementById('name');
+
+
+  function Video1()
+  {
+      video.src = 'https://www.youtube.com/embed/69fx7n-D_nU';
+      name.innerHTML = "Janet Jackson - Together Again";
+  }
+  function Video2()
+  {
+      video.src = 'https://www.youtube.com/embed/jjnmICxvoVY';
+      name.innerHTML = "Savage Garden - I Knew I Loved You";
+
+  }
+  function Video3()
+  {
+      video.src = 'https://www.youtube.com/embed/H64QG4UsrGI';
+      name.innerHTML = "Mario - Let Me Love You";
+
+  }
+  function Video4()
+  {
+      video.src = 'https://www.youtube.com/embed/iP6XpLQM2Cs';
+      name.innerHTML = "Kesha - TiK ToK";
+
+  }
+  function Video5()
+  {
+      video.src = 'https://www.youtube.com/embed/OPf0YbXqDm0';
+      name.innerHTML = "Bruno Mars - Uptown Funk";
+
+  }
+  function Video6()
+  {
+      video.src = 'https://www.youtube.com/embed/uLHqpjW3aDs';
+      name.innerHTML = "Roddy Ricch - The Box";
+
+  }
+  function Video7()
+  {
+      video.src = 'https://www.youtube.com/embed/_Bjf-iExroI';
+      name.innerHTML = "Olivia Rodrigo - Drivers License";
+
+  }
+  function Video8()
+  {
+      video.src = '';
+      name.innerHTML = "Not Known Yet";
+
+  }
+  </script>
+  </body>
+</html>
