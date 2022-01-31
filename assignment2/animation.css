@@ -1,0 +1,78 @@
+* {
+  background: black;
+}
+a {
+position: absolute;
+background-color: black;
+height: 200px;
+width: 200px;
+top: 1%;
+left: 1%;
+border-style: solid;
+border-color: white;
+border-width: 1px;
+text-decoration: none;
+animation: moveTheBlock 60s linear infinite;
+
+}
+a:hover{
+  animation: backAni 15s linear infinite;
+
+  animation: moveTheBlock 60s linear infinite;
+}
+p {
+  text-align: center;
+  color: #ff0000;
+  animation: textAni 15s linear infinite;
+  background: none;
+  transition: opacity .5s;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+p:hover{
+  opacity: 0%;
+}
+
+@keyframes textAni {
+  0%   {color:#ff0000;}
+  25%  {color:#00ff00;}
+  50% {color:#0000ff;}
+  75%  {color:#ffff00;}
+  100%   {color:#ff0000;}
+}
+
+  @keyframes backAni {
+    0%   {background-color:#ff0000;}
+    25%  {background-color:#00ff00;}
+    50% {background-color:#0000ff;}
+    75%  {background-color:#ffff00;}
+    100%   {background-color:#ff0000;}
+  }
+
+  @keyframes moveTheBlock {
+      0%   {top: 1%; left: 1%; background:#ff0000;}
+      10%  {top: 75%; left: 1%; width: 300px; height: 300px;}
+      20%  {top: 75%; left: 85%;}
+      25%  {top: 50%; left: 50%; width: 150px; height: 150px; background:#00ff00;}
+      30%  {top: 25%; left: 75%;}
+      40%  {top: 32%; left: 1%; transform: rotate(360deg); width: 300px; height: 300px;}
+      41%  {top: 37%;}
+      42%  {top: 24%;}
+      43%  {top: 36%;}
+      44%  {top: 70%;}
+      45%  {top: 32%;}
+      46%  {top: 72%;}
+      47%  {top: 42%;}
+      48%  {top: 48%;}
+      49%  {top: 29%;}
+      50%  {left: 85%; top: 35%; width: 200px; height: 200px; transform: rotate(360deg); color:#0000ff;}
+      60%  {transform: rotate(0deg); border-radius: 100%; filter: blur(0px);}
+      70%  {background:#ffff00;}
+      80%  {filter: blur(200px);}
+      90%  {}
+      100%  {width: 200px; height: 200px; border-radius: 0%; transform: rotate(2160deg); top: 1%; left: 1%; background: #ff0000;}
+
+
+  }
