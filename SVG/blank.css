@@ -100,8 +100,8 @@ body {
   0%  {opacity: 0%;
     filter: blur(1px);
     transform: translateY(1000px) rotate(0turn);
-    width: 10px;
-    height: 10px;}
+    width: 30px;
+    height: 30px;}
 
   25% {opacity: 100%}
 
