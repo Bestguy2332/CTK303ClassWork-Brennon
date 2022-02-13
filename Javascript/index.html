@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+    let width = screen.width;
+    let height = screen.height;
+    </script>
+    <title>The Code Is 4582</title>
+</head>
+
+<body onload="setup()" id="body">
+
+  <div id="canvas1">
+    <p id="timer">30</p>
+    <div id="keypad">
+    <div id="screen"><p id="screenText">Defuse</p></div>
+    <a onclick="code(1)" id='code1'>1</a>
+    <a onclick="code(2)" id='code2'>2</a>
+    <a onclick="code(3)" id='code3'>3</a>
+    <a onclick="code(4)" id='code4'>4</a>
+    <a onclick="code(5)" id='code5'>5</a>
+    <a onclick="code(6)" id='code6'>6</a>
+    <a onclick="code(7)" id='code7'>7</a>
+    <a onclick="code(8)" id='code8'>8</a>
+    <a onclick="code(9)" id='code9'>9</a>
+    <a onclick="code(0)" id='code0'>0</a>
+  </div>
+</div>
+<p id ="winStatement">hidden text</p>
+  <script>
+  let timer = 30;
+  let codeNum = 1;
+  let bombDefused = false;
+  let colorflashtime = 3;
+  let colorflash = '';
+  let bombtick = new Audio('bomb tick_mixdown.wav');
+  let boom = new Audio('ES_Bomb Explosion 4 - SFX Producer.mp3');
+  let dead = false;
+  let TimerStart = false;
+  function setup(){
+    document.getElementById('canvas1').style.width = "99%"
+    document.getElementById('canvas1').style.height = "95%"
+    }
+
+function code(number){
+  if(codeNum == 4 && number == 2){
+    flash("green");
+    document.getElementById('screenText').innerHTML = "4582";
+    bombDefused = true;
+  } else if (codeNum == 4 && number != 2){
+    flash("red");
+    document.getElementById('screenText').innerHTML = "458" + number;
+    return;
+  }
+  if(codeNum == 3 && number == 8){
+    flash("green");
+    document.getElementById('screenText').innerHTML = "458";
+  } else if (codeNum == 3 && number != 8){
+    flash("red");
+    document.getElementById('screenText').innerHTML = "45" + number;
+    return;
+  }
+  if(codeNum == 2 && number == 5){
+    flash("green");
+    document.getElementById('screenText').innerHTML = "45";
+  } else if (codeNum == 2 && number != 5) {
+    flash("red");
+    document.getElementById('screenText').innerHTML = "4" + number;
+    return;
+  }
+   if (codeNum == 1 && number == 4){
+    flash("green");
+    document.getElementById('screenText').innerHTML = "4";
+    TimerStart = true;
+  } else if (codeNum == 1 && number != 4){
+    flash("red");
+    document.getElementById('screenText').innerHTML = number;
+    TimerStart = true;
+    return;
+  }
+}
+
+ setInterval(function(){
+   if (TimerStart) {
+if (bombDefused == false){
+   if (timer < 1)
+   {
+     document.getElementById('canvas1').style.display = "none";
+     if (!dead){
+     boom.play();
+     dead = true;
+   }
+   } else if (timer >= 1)
+   {
+     timer = timer - 1;
+     console.log(timer);
+     document.getElementById('timer').innerHTML = timer;
+     if (timer <= 10){
+       document.getElementById('timer').style.background = 'red';
+     }
+     bombtick.play();
+   }
+ } else {
+   document.getElementById("winStatement").style.display = "inline";
+   document.getElementById("winStatement").innerHTML = "You Defused The Bomb with " + timer + " seconds remaining";
+ }
+}
+ },1000);
+
+ setInterval(function(){
+   if (colorflashtime <= 1){
+     document.getElementById('screen').style.background = colorflash;
+     colorflashtime++;
+   } else {
+     document.getElementById('screen').style.background = 'green';
+      if( colorflash =='#ff0000') {
+     document.getElementById('screenText').innerHTML = "";
+    }
+   }
+ },100);
+
+function flash(color)
+{
+  if (color == "green"){
+    codeNum++;
+    console.log('green');
+    colorflashtime = 0;
+    colorflash = '#00ff00';
+  } else{
+    codeNum = 1;
+    console.log('red');
+    colorflash = '#ff0000';
+    colorflashtime = 0;
+
+  }
+}
+
+  </script>
+</body>
+</html>

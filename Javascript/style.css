@@ -1,0 +1,133 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url('DIGITALDREAM.ttf');
+}
+
+body{
+  background: black;
+}
+
+a {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 20px;
+  background: darkgrey;
+  text-decoration: none;
+  width: 100px;
+  height: 75px;
+  position: absolute;
+  border: 2px solid lightgrey;
+}
+
+a:hover{
+  background-color: lightgrey;
+    border: 4px solid darkgrey;
+}
+
+#timer{
+  font-size: 75px;
+  position: absolute;
+  left: 50px;
+  Color: black;
+  background: green;
+  width: 150px;
+  padding: 50px;
+  text-align: center;
+  border: 10px solid grey;
+  font-family: myFirstFont;
+}
+
+#winStatement{
+  display: none;
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  font-size: 50px;
+  background: white;
+}
+
+#screenText{
+  text-align: center;
+  font-size: 75px;
+  padding: 10px;
+  margin: 0px;
+
+   font-family: myFirstFont;
+}
+
+#canvas1{
+
+  background-image: repeating-linear-gradient(black, red 10%, black 20%);
+  position: absolute;
+}
+
+#keypad{
+  position: absolute;
+  left: 400px;
+  top: 50px;
+  background: gray;
+  border-radius: 5px;
+  width: 500px;
+  height: 720px;
+  border: 2px solid lightgrey;
+}
+
+#screen{
+  background-color: green;
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  top: 25px;
+  border: 1px solid black;
+}
+
+#code1{
+  left: 50px;
+  top: 150px;
+}
+
+#code2{
+  left: 200px;
+  top: 150px;
+}
+
+#code3{
+  left: 350px;
+  top: 150px;
+}
+
+#code4{
+  left: 50px;
+  top: 300px;
+}
+
+#code5{
+  left: 200px;
+  top: 300px;
+}
+
+#code6{
+  left: 350px;
+  top: 300px;
+}
+
+#code7{
+  left: 50px;
+  top: 450px;
+}
+
+#code8{
+  left: 200px;
+  top: 450px;
+}
+
+#code9{
+  left: 350px;
+  top: 450px;
+}
+
+#code0{
+  left: 200px;
+  top: 600px;
+}
