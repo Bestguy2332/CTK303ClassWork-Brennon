@@ -42,7 +42,7 @@ a{
   transition: 1s;
   font-size: 3em;
   opacity: 0%;
-  width: 100%
+  width: 100%;
 }
 
 #shape{
@@ -60,19 +60,22 @@ a{
   display: grid;
   gap: 10px;
   border: 1px white solid;
+  opacity: 0%;
 }
 
 @media all and (min-width: 20rem){
+  #Title{opacity: 0%;}
+}
+
+@media all and (min-height: 37em){
+  #Square{opacity: 100%;}
   #Title{opacity: 100%;}
-  #Title2{opacity: 100%;}
+
 
 }
 
-
-
 @media all and (min-width: 45rem){
   #Title{opacity: 0%;}
-  #Title2{opacity: 0%;}
   #shape{grid-template-columns: 1fr 1fr 1fr;}
 
 
