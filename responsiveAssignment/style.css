@@ -52,7 +52,7 @@ body{
   #rotateDiv {border-radius: 25%;}
 
 
-@media all and (min-width: 50rem){
+@media all and (min-width: 40rem){
   #Title{opacity: 0%;}
   #Title2{opacity: 0%;}
   #rotateDiv {border-radius: 100%;}
