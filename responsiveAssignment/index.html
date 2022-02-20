@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive rectangle</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div id="rotateDiv">
+    <div id="divcolor">
+  <script>
+  setInterval(function(){
+    var red = screen.width;
+    var sat = screen.height;
+    document.getElementById('rotateDiv').style.transform = "rotate("+screen.height+"deg)";
+    document.getElementById('divcolor').style.background = "hsl("+(red/5)+", 100%, 50%)";
+  },1);
+  </script>
+    </div>
+  </div>
+<h1 id="Title">The Reactive Rectangle</h1>
+<h1 id="Title2">Rotate Your Screen</h1>
+
+</body>
+</html>
