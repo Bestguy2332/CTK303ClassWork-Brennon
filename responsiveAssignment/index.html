@@ -18,11 +18,31 @@
     document.getElementById('rotateDiv').style.transform = "rotate("+screen.height+"deg)";
     document.getElementById('divcolor').style.background = "hsl("+(red/5)+", 100%, 50%)";
   },1);
+
+  function Square(){
+  console.log("square");
+  document.getElementById("rotateDiv").style.borderRadius = "0%";
+  }
+
+  function RSquare(){
+  console.log("rsquare");
+  document.getElementById("rotateDiv").style.borderRadius = "10%";
+  }
+
+  function Circle(){
+  console.log("circle");
+  document.getElementById("rotateDiv").style.borderRadius = "100%";
+  }
   </script>
     </div>
   </div>
 <h1 id="Title">The Reactive Rectangle</h1>
-<h1 id="Title2">Rotate Your Screen</h1>
+
+<div id="shape">
+<a id="Square" onclick="Square()">Square</a>
+<a id="Square" onclick="RSquare()"> Rounded Square</a>
+<a id="Square" onclick="Circle()">Circle</a>
+</div>
 
 </body>
 </html>

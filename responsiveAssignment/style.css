@@ -1,11 +1,20 @@
 *{
-  transition: 2s;
+  transition: 1s;
 
 }
 
 body{
   background: black;
 
+}
+
+a{
+  text-align: center;
+  font-size: 2em;
+}
+
+#Square:hover {
+  background: #b323fa;
 }
 
 #rotateDiv {
@@ -27,35 +36,45 @@ body{
 
 #Title{
   position: absolute;
-  top: 0em;
+  bottom: 0em;
+  text-align: center;
   color: white;
   transition: 1s;
   font-size: 3em;
   opacity: 0%;
-
+  width: 100%
 }
 
-#Title2{
-  color: white;
-  transition: 1s;
-  font-size: 3em;
-  position: absolute;
-  bottom: 0em;
-  left: 0%;
-  opacity: 0%;
+#shape{
+  width: 98%;
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  bottom: 1rem;
+}
 
+#Square{
+  background: #6a1594;
+  color: white;
+  text-decoration: none;
+  display: grid;
+  gap: 10px;
+  border: 1px white solid;
 }
 
 @media all and (min-width: 20rem){
   #Title{opacity: 100%;}
   #Title2{opacity: 100%;}
-  #rotateDiv {border-radius: 25%;}
+
+}
 
 
-@media all and (min-width: 40rem){
+
+@media all and (min-width: 45rem){
   #Title{opacity: 0%;}
   #Title2{opacity: 0%;}
-  #rotateDiv {border-radius: 100%;}
-   body { max-width: 960px; margin: 0rem auto; }
+  #shape{grid-template-columns: 1fr 1fr 1fr;}
+
+
 
 }
