@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Advance Web Design Portfolio</title>
+  </head>
+  <body class="bg-dark">
+    <!-- Background image -->
+    <div class="bg-image " style="background-image: url('background.png'); height: 100vh;">
+    <!-- Background image -->
+      <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid ">
+          <h1 class="navbar-brand h2" href="#">Brennon's Demo as a portfolio</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class=" nav-link" onclick="changeproject1()">Birthday</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="changeproject2()">Animation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="changeproject3()">Fireworks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="changeproject4()">Bomb</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="changeproject5()">Resposive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="changeproject6()">Bootstrap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container text-center" >
+        <h1 class="text-light" id="content">A Small Display of Things I have done for this class</h1>
+
+        <div class="row" >
+            <div class="col d-flex justify-content-center mx-auto" id="col">
+              <div class="maintxt" style="background: black;">
+                <div class="project-category text-faded">
+                  <button class="h3 text-light"  id="button1" onclick="changeproject1()">Project 1 <br><span class="h6">Birthday but it dissappeared :(</span></button>
+                </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center mx-auto" id="col">
+            <div class="maintxt" style="background: url(project2.png);">
+              <div class="project-category text-faded">
+                <button class="h3 text-light" onclick="changeproject2()">Project 2 <br><span class="h6">CSS Animation</span></button>
+              </div>
+            </div>
+          </div>
+          <<div class="col d-flex justify-content-center mx-auto" id="col">
+            <div class="maintxt" style="background: url(firework.png);">
+              <div class="project-category text-faded">
+                <button class="h3 text-light" onclick="changeproject3()">Project 3 <br><span class="h6">Fireworks</span></button>
+              </div>
+            </div>
+        </div>
+        <<div class="col d-flex justify-content-center mx-auto" id="col">
+            <div class="maintxt" style="background: url(bomb.png);">
+              <div class="project-category text-faded">
+                <button class="h3 text-light" onclick="changeproject4()">Project 4 <br><span class="h6">BOMB!</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mx-auto" id="col">
+              <div class="maintxt" style="background: url(rect.png);">
+                <div class="project-category text-faded">
+                  <button class="h3 text-light" onclick="changeproject5()">Project 5 <br><span class="h6">CSS Animation</span></button>
+                </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center mx-auto" id="col">
+            <div class="maintxt" style="background: url(project6.png);">
+              <div class="project-category text-faded">
+                <button class="h3 text-light" onclick="changeproject6()">Project 6 <br><span class="h6">You're looking at it</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <iframe class="justify-content-center mx-auto" id="websites" src="https://bestguy2332.github.io/CTK303ClassWork-Brennon/assignment2/blank.html" height='750em' width='100%'></iframe>
+<script>
+
+
+
+
+function changeproject1(){
+  document.getElementById('websites').src = "";
+}
+function changeproject2(){
+  document.getElementById('websites').src = "https://bestguy2332.github.io/CTK303ClassWork-Brennon/assignment2/blank.html";
+}
+function changeproject3(){
+  document.getElementById('websites').src = "https://bestguy2332.github.io/CTK303ClassWork-Brennon/SVG/blank.html";
+}
+function changeproject4(){
+  document.getElementById('websites').src = "https://bestguy2332.github.io/CTK303ClassWork-Brennon/Javascript/index.html";
+}
+function changeproject5(){
+  document.getElementById('websites').src = "https://bestguy2332.github.io/CTK303ClassWork-Brennon/responsiveAssignment/index.html";
+}
+function changeproject6(){
+  document.getElementById('websites').src = "https://bestguy2332.github.io/CTK303ClassWork-Brennon/Bootstrap/bootstrap.html";
+}
+</script>
+  </body>
+</html>
