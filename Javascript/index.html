@@ -11,7 +11,7 @@
 </head>
 
 <body onload="setup()" id="body">
-
+<nav>
   <div id="canvas1">
     <p id="timer">30</p>
     <div id="keypad">
@@ -28,7 +28,9 @@
     <a onclick="code(0)" id='code0'>0</a>
   </div>
 </div>
-<p id ="winStatement">hidden text</p>
+</nav>
+<main>
+<h1 id ="winStatement">hidden text</h1>
   <script>
   let timer = 30;
   let codeNum = 1;
@@ -138,5 +140,6 @@ function flash(color)
 }
 
   </script>
+</main>
 </body>
 </html>
